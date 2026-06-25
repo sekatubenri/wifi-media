@@ -1,11 +1,12 @@
 import { getAllArticles } from '@/lib/articles'
 import Link from 'next/link'
+import ArticleCard from '@/components/ArticleCard'
 
 const CATEGORIES = [
-  { key: 'hikari', label: '光回線', emoji: '🔌', desc: '速度重視ならコレ' },
-  { key: 'wifi', label: 'ポケットWi-Fi', emoji: '📶', desc: '持ち運びOK' },
-  { key: 'homerouter', label: 'ホームルーター', emoji: '🏠', desc: '工事不要で快適' },
-  { key: 'sim', label: '格安SIM', emoji: '📱', desc: 'スマホ代を節約' },
+  { key: 'hikari', label: '光回線', icon: '🔌', desc: '速度重視ならコレ', color: 'from-blue-500 to-cyan-500' },
+  { key: 'wifi', label: 'ポケットWi-Fi', icon: '📶', desc: '持ち運びOK', color: 'from-emerald-500 to-green-600' },
+  { key: 'homerouter', label: 'ホームルーター', icon: '🏠', desc: '工事不要で快適', color: 'from-orange-500 to-amber-500' },
+  { key: 'sim', label: '格安SIM', icon: '📱', desc: 'スマホ代を節約', color: 'from-purple-500 to-violet-600' },
 ]
 
 export default function Home() {
@@ -31,10 +32,12 @@ export default function Home() {
             <Link
               key={cat.key}
               href={`/category/${cat.key}`}
-              className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all text-center"
+              className="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all text-center group"
             >
-              <span className="text-2xl">{cat.emoji}</span>
-              <h3 className="font-bold text-sm text-gray-900 mt-2">{cat.label}</h3>
+              <div className={`bg-gradient-to-br ${cat.color} w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3`}>
+                <span className="text-xl">{cat.icon}</span>
+              </div>
+              <h3 className="font-bold text-sm text-gray-900 group-hover:text-emerald-700 transition-colors">{cat.label}</h3>
               <p className="text-xs text-gray-400 mt-1">{cat.desc}</p>
             </Link>
           ))}
@@ -48,24 +51,7 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {articles.map((article) => (
-            <Link
-              key={article.slug}
-              href={`/article/${article.slug}`}
-              className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all"
-            >
-              <div className="bg-gradient-to-r from-emerald-50 to-teal-50 h-32 flex items-center justify-center">
-                <span className="text-4xl opacity-30">📡</span>
-              </div>
-              <div className="p-5">
-                <span className="inline-block text-xs bg-emerald-100 text-emerald-700 font-medium px-2.5 py-0.5 rounded-full mb-3">
-                  {article.categoryLabel}
-                </span>
-                <h3 className="font-bold text-gray-900 text-sm leading-relaxed mb-3 line-clamp-3 group-hover:text-emerald-700 transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-xs text-gray-400">{article.date}</p>
-              </div>
-            </Link>
+            <ArticleCard key={article.slug} article={article} />
           ))}
         </div>
       </section>
