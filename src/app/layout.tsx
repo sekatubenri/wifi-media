@@ -47,7 +47,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <a href="/category/sim" className="hover:text-gray-600">格安SIM</a>
               </nav>
             </div>
-            <p className="text-center text-xs text-gray-300 mt-6">© 2026 ネット回線ナビ All rights reserved.</p>
+            <nav className="flex justify-center gap-6 text-xs text-gray-400 mt-4">
+              <a href="/privacy" className="hover:text-gray-600">プライバシーポリシー</a>
+              <a href="/contact" className="hover:text-gray-600">お問い合わせ</a>
+            </nav>
+            <p className="text-center text-xs text-gray-300 mt-4">© 2026 ネット回線ナビ All rights reserved.</p>
           </div>
         </footer>
       </body>
