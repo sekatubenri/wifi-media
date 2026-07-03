@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     locale: 'ja_JP',
     siteName: 'ネット回線ナビ',
   },
+  verification: {
+    google: 'XcyMImXtiMlMj5NBeiKQBcD_Vqrw3EDW0TDFBVTAtaA',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
