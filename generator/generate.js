@@ -35,6 +35,11 @@ const AFFILIATE_BOTTOM = `
     <li><a href="https://www.amazon.co.jp/dp/B0DM8PTZS1?linkCode=ll2&tag=mirainikibouw-22&linkId=c92deb0c28c33ab88c5c83de2a0a278e&ref_=as_li_ss_tl" rel="nofollow" target="_blank" style="color:#1d4ed8;text-decoration:underline;">▶ ASUS RT-BE92U Wi-Fi 7 ルーター【Amazon】</a></li>
   </ul>
 </div>
+<div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:16px;margin:24px 0;">
+  <p style="font-weight:bold;color:#15803d;margin:0 0 8px;">【PR】法人・店舗向け 工事不要の5G対応Wi-Fi</p>
+  <a href="https://t.afi-b.com/visit.php?a=p14724Z-O4815629&p=39862071" rel="nofollow" style="display:inline-block;background:#16a34a;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">BizAir｜工事不要・即日開通の法人5G Wi-Fi</a>
+  <img src="https://t.afi-b.com/lead/p14724Z/39862071/O4815629" width="1" height="1" style="border:none;" />
+</div>
 <div style="background:#fff0f0;border:2px solid #e00;border-radius:8px;padding:16px;margin:24px 0;">
   <p style="font-weight:bold;color:#c00;margin:0 0 12px;">🛒 楽天で人気のWi-Fiルーター</p>
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
