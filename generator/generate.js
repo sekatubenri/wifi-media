@@ -95,12 +95,7 @@ async function generateArticle() {
 
   const today = new Date().toISOString().split('T')[0];
 
-  const message = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 4000,
-    messages: [{
-      role: 'user',
-      content: `あなたはネット回線比較メディア「${SITE.name}」の専門ライターです。
+  const prompt = `あなたはネット回線比較メディア「${SITE.name}」の専門ライターです。
 SEOに最適化されたインターネット回線・WiFi情報記事を生成してください。
 
 トピック: ${topic.title}
@@ -121,15 +116,37 @@ contentの要件:
 - ul/ol/liリスト、tableを積極的に活用
 - 料金・速度・キャッシュバックなど具体的な数字を含める
 - 読者が回線選びで迷わない実践的な比較内容
-- JSON文字列として正しくエスケープ（"は\\"、改行は\\n）`
-    }],
-  });
+- JSON文字列として正しくエスケープ（"は\\"、改行は\\n）`;
 
-  const text = message.content[0].text.trim();
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) throw new Error('レスポンスにJSONが見つかりません');
+  let article = null;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const message = await client.messages.create({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 4000,
+        messages: [{ role: 'user', content: prompt }],
+      });
+      const text = message.content[0].text.trim();
+      console.log(`試行${attempt} 先頭200文字:`, text.slice(0, 200));
+      const cleaned = text.replace(/```json\s*/g, '').replace(/```\s*/g, '');
+      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        article = JSON.parse(jsonMatch[0]);
+        break;
+      }
+      console.log(`試行${attempt}: JSONが見つかりません`);
+    } catch (err) {
+      console.log(`試行${attempt}エラー: ${err.message}`);
+    }
+    if (attempt < 3) await new Promise(r => setTimeout(r, 3000));
+  }
 
-  const article = JSON.parse(jsonMatch[0]);
+  if (!article) {
+    console.log('3回失敗のためトピックをスキップします');
+    const remaining = topics.filter(t => t.filename !== topic.filename);
+    fs.writeFileSync(topicsPath, JSON.stringify(remaining, null, 2));
+    process.exit(0);
+  }
 
   // アフィリエイトリンクを挿入
   if (article.content.includes('<h2')) {
