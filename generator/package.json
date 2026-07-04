@@ -2,6 +2,7 @@
   "name": "article-generator",
   "version": "1.0.0",
   "dependencies": {
-    "@anthropic-ai/sdk": "latest"
+    "@anthropic-ai/sdk": "latest",
+    "twitter-api-v2": "latest"
   }
 }

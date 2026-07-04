@@ -18,6 +18,10 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install dependencies
+        run: npm install
+        working-directory: generator
+
       - name: Post tweet
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
