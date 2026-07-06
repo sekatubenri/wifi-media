@@ -42,6 +42,7 @@ const AFFILIATE_TOP = `
     <li><a href="https://px.a8.net/svt/ejp?a8mat=4B648K+A5K67M+4SHG+5YJRM" rel="nofollow" style="display:inline-block;background:#059669;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">▶ 複雑な条件なし！契約期間しばりなし光回線【おてがる光】</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B648K+A5K67M+4SHG+5YJRM" alt=""></li>
     <li><a href="https://px.a8.net/svt/ejp?a8mat=4B648K+9MIAUQ+3SPO+CKHNGY" rel="nofollow" style="display:inline-block;background:#e11d48;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">▶ 安定した光回線をコスパ良く【ahamo光】</a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B648K+9MIAUQ+3SPO+CKHNGY" alt=""></li>
     <li><a href="https://px.a8.net/svt/ejp?a8mat=4B648K+9HQU0I+1QFI+354SDE" rel="nofollow" style="display:inline-block;background:#374151;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">▶ 最低利用期間も違約金もなし！【DTI 光】</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B648K+9HQU0I+1QFI+354SDE" alt=""></li>
+    <li><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3774937&pid=892653522" rel="nofollow" style="display:inline-block;background:#e879f9;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">▶ にゃんこWi-Fi｜縛りなし＆業界最安級ポケットWi-Fi【100GB 2,970円〜】</a><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3774937&pid=892653522" height="1" width="1" border="0" alt=""></li>
   </ul>
 </div>`;
 
