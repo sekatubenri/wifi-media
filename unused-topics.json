@@ -1,10 +1,5 @@
 [
   {
-    "filename": "onu-router-difference.json",
-    "title": "ONUとルーターの違いを分かりやすく解説",
-    "category": "hikari"
-  },
-  {
     "filename": "pppoe-ipoe-guide.json",
     "title": "PPPoEとIPoEの違い｜IPv6高速化の仕組み",
     "category": "hikari"
