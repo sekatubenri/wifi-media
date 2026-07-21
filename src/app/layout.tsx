@@ -3,6 +3,7 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kaisen-select.com'),
   title: {
     default: 'ネット回線ナビ｜光回線・Wi-Fi・格安SIM比較',
     template: '%s｜ネット回線ナビ',

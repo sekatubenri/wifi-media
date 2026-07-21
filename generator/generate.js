@@ -6,7 +6,7 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const SITE = {
   name: 'ネット回線ナビ',
-  url: 'https://wifi-media-eta.vercel.app',
+  url: 'https://kaisen-select.com',
 };
 
 const AFFILIATE_TOP = `
