@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'ネット回線ナビ',
   },
   verification: {
-    google: 'XcyMImXtiMlMj5NBeiKQBcD_Vqrw3EDW0TDFBVTAtaA',
+    google: 't1QTqCoaj_FDdMZB3Wvy4RfmLS86AbGFjvqu_J0gyP0',
   },
 }
 
