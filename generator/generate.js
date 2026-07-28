@@ -119,11 +119,12 @@ SEOに最適化されたインターネット回線・WiFi情報記事を生成�
 }
 
 contentの要件:
-- 2500文字以上のHTML本文
-- h2見出しを5〜8個、必要に応じてh3も使用
-- ul/ol/liリスト、tableを積極的に活用
+- 1500文字程度のHTML本文（簡潔にまとめること）
+- h2見出しを3〜5個
+- ul/liリスト、tableを活用
 - 料金・速度・キャッシュバックなど具体的な数字を含める
-- 読者が回線選びで迷わない実践的な比較内容
+- JSON文字列として正しくエスケープ（"は\\"、改行は\\n）
+- 必ずJSON全体を完結させること（途中で切れないこと）
 - JSON文字列として正しくエスケープ（"は\\"、改行は\\n）`;
 
   let article = null;
@@ -131,7 +132,7 @@ contentの要件:
     try {
       const message = await client.messages.create({
         model: 'claude-haiku-4-5-20251001',
-        max_tokens: 4000,
+        max_tokens: 6000,
         messages: [{ role: 'user', content: prompt }],
       });
       const text = message.content[0].text.trim();
