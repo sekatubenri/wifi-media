@@ -5,11 +5,6 @@
     "category": "wifi"
   },
   {
-    "filename": "parental-control-wifi.json",
-    "title": "子ども向けWiFiのネット制限・ペアレンタルコントロール設定",
-    "category": "wifi"
-  },
-  {
     "filename": "manshon-shared-wifi.json",
     "title": "マンション共用WiFiの問題点と解決策",
     "category": "wifi"
