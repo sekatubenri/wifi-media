@@ -28,5 +28,135 @@
     "filename": "mineo-review.json",
     "title": "mineo（マイネオ）の評判・速度・料金を解説",
     "category": "sim"
+  },
+  {
+    "filename": "wifi-reikin-nashi.json",
+    "title": "光回線の乗り換えで違約金を払わずに済ませる方法",
+    "category": "wifi"
+  },
+  {
+    "filename": "rental-wifi-router.json",
+    "title": "賃貸物件でも使えるWiFiルーターの選び方",
+    "category": "wifi"
+  },
+  {
+    "filename": "home-router-nokoji.json",
+    "title": "工事不要で使えるホームルーター比較2026",
+    "category": "wifi"
+  },
+  {
+    "filename": "wifi-slow-fix.json",
+    "title": "光回線の速度が遅い時の原因と改善方法",
+    "category": "wifi"
+  },
+  {
+    "filename": "hitori-gurashi-wifi.json",
+    "title": "一人暮らし向け光回線・WiFiのおすすめプラン",
+    "category": "wifi"
+  },
+  {
+    "filename": "homerouter-vs-hikari.json",
+    "title": "ホームルーターと光回線の料金・速度を徹底比較",
+    "category": "wifi"
+  },
+  {
+    "filename": "hikari-hikkoshi.json",
+    "title": "引っ越し時の光回線手続きの流れと注意点",
+    "category": "wifi"
+  },
+  {
+    "filename": "hikari-cashback-2026.json",
+    "title": "光回線のキャッシュバックキャンペーン比較2026",
+    "category": "wifi"
+  },
+  {
+    "filename": "wifi6-router.json",
+    "title": "Wi-Fi 6対応ルーターのメリットと選び方",
+    "category": "wifi"
+  },
+  {
+    "filename": "hikari-kaiyaku-cost.json",
+    "title": "光回線の解約金・撤去費用を安く抑える方法",
+    "category": "wifi"
+  },
+  {
+    "filename": "mansion-hikari-plan.json",
+    "title": "マンション向け光回線の速度とプラン比較",
+    "category": "wifi"
+  },
+  {
+    "filename": "telework-wifi.json",
+    "title": "テレワークにおすすめの光回線・WiFi環境の作り方",
+    "category": "wifi"
+  },
+  {
+    "filename": "hikari-smaho-set.json",
+    "title": "光回線とスマホのセット割引を比較する",
+    "category": "wifi"
+  },
+  {
+    "filename": "5g-router-vs-hikari.json",
+    "title": "5Gホームルーターと光回線どちらがお得か",
+    "category": "wifi"
+  },
+  {
+    "filename": "hikari-kaitsuu-flow.json",
+    "title": "光回線の開通工事にかかる期間と流れ",
+    "category": "wifi"
+  },
+  {
+    "filename": "linemo-vs-ahamo.json",
+    "title": "LINEMOとahamoの料金・速度を徹底比較",
+    "category": "sim"
+  },
+  {
+    "filename": "kakuyasu-sim-guide.json",
+    "title": "格安SIMの選び方【初心者向け完全ガイド】",
+    "category": "sim"
+  },
+  {
+    "filename": "sim-slow-time.json",
+    "title": "格安SIMの速度が遅くなる時間帯と対策",
+    "category": "sim"
+  },
+  {
+    "filename": "esim-ranking-2026.json",
+    "title": "eSIM対応格安SIMおすすめランキング2026",
+    "category": "sim"
+  },
+  {
+    "filename": "gakusei-sim-plan.json",
+    "title": "学生におすすめの格安SIMプラン比較",
+    "category": "sim"
+  },
+  {
+    "filename": "mnp-tenkan-flow.json",
+    "title": "格安SIMへの乗り換え手順とMNP予約番号の取得方法",
+    "category": "sim"
+  },
+  {
+    "filename": "kazoku-sim-tenkan.json",
+    "title": "家族で格安SIMに乗り換えるメリットと注意点",
+    "category": "sim"
+  },
+  {
+    "filename": "sim-kaigai-roaming.json",
+    "title": "格安SIMの海外利用・国際ローミング対応比較",
+    "category": "sim"
+  },
+  {
+    "filename": "sim-carrier-mail.json",
+    "title": "格安SIMのキャリアメール問題と対策",
+    "category": "sim"
+  },
+  {
+    "filename": "uqmobile-review.json",
+    "title": "UQモバイルの評判・速度・料金を徹底解説",
+    "category": "sim"
+  },
+  {
+    "filename": "sim-quality-diff.json",
+    "title": "格安SIMと大手キャリアの通信品質の違い",
+    "category": "sim"
   }
 ]
