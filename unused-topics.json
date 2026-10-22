@@ -1,32 +1,116 @@
 [
   {
-    "filename": "wifi-channel-setting.json",
-    "title": "WiFiチャンネル設定で速度を改善する方法",
-    "category": "wifi"
+    "filename": "pocket-wifi-demerit.json",
+    "title": "ポケットWi-Fiのデメリットとは？向いている人・向かない人を徹底解説",
+    "category": "wifi",
+    "keyword": "ポケットwi-fi デメリット"
   },
   {
-    "filename": "vpn-guide.json",
-    "title": "VPNとは？仕組みと安全な使い方ガイド",
-    "category": "wifi"
+    "filename": "kakuyasu-sim-demerit.json",
+    "title": "格安SIMのデメリット8つ｜乗り換え前に知るべき注意点と対策を解説",
+    "category": "sim",
+    "keyword": "格安sim デメリット"
   },
   {
-    "filename": "linemo-review.json",
-    "title": "LINEMOの評判・速度・料金を徹底解説",
-    "category": "sim"
+    "filename": "hikari-demerit.json",
+    "title": "光回線のデメリットとは？工事・費用・契約期間の注意点と対策を解説",
+    "category": "hikari",
+    "keyword": "光回線 デメリット"
   },
   {
-    "filename": "ymobile-review.json",
-    "title": "ワイモバイルの評判・速度・家族割料金を解説",
-    "category": "sim"
+    "filename": "homerouter-provider-hitsuyou.json",
+    "title": "ホームルーターにプロバイダ契約は必要？光回線との違いと仕組みを解説",
+    "category": "homerouter",
+    "keyword": "ホームルーター プロバイダ 必要 か"
   },
   {
-    "filename": "iijmio-review.json",
-    "title": "IIJmioの評判・速度・料金プランを徹底解説",
-    "category": "sim"
+    "filename": "kakuyasu-sim-pc.json",
+    "title": "格安SIMをパソコンで使う方法｜必要な機器・おすすめプランと設定手順",
+    "category": "sim",
+    "keyword": "格安sim パソコン で 使う"
   },
   {
-    "filename": "mineo-review.json",
-    "title": "mineo（マイネオ）の評判・速度・料金を解説",
-    "category": "sim"
+    "filename": "sim-kihon-ryokin-zero.json",
+    "title": "基本料金0円で使える格安SIM比較｜維持費を抑えるサブ回線の選び方",
+    "category": "sim",
+    "keyword": "格安 sim 基本料金 0 円"
+  },
+  {
+    "filename": "pocket-wifi-erabikata.json",
+    "title": "ポケットWi-Fiの選び方｜容量・回線・料金で失敗しない5つのポイント",
+    "category": "wifi",
+    "keyword": "ポケットwi-fi 選び方"
+  },
+  {
+    "filename": "homerouter-wifi-router-chigai.json",
+    "title": "ホームルーターとWi-Fiルーターの違いとは？役割・料金・選び方を解説",
+    "category": "homerouter",
+    "keyword": "ホームルーター wi-fiルーター 違い"
+  },
+  {
+    "filename": "homerouter-pocket-wifi-chigai.json",
+    "title": "ホームルーターとポケットWi-Fiの違い｜速度・料金・使い方で徹底比較",
+    "category": "homerouter",
+    "keyword": "ホームルーター ポケットwi-fi 違い"
+  },
+  {
+    "filename": "hikari-norikae-router-settei.json",
+    "title": "光回線乗り換え時のルーター設定方法｜そのまま使える？手順と注意点",
+    "category": "hikari",
+    "keyword": "光回線 乗り換え ルーター 設定"
+  },
+  {
+    "filename": "kakuyasu-sim-towa.json",
+    "title": "格安SIMとは？仕組み・大手キャリアとの違い・メリットを初心者向けに解説",
+    "category": "sim",
+    "keyword": "格安simとは"
+  },
+  {
+    "filename": "hikari-1giga-10giga-chigai.json",
+    "title": "光回線1ギガと10ギガの違い｜速度・料金・必要な人を徹底比較",
+    "category": "hikari",
+    "keyword": "光回線 1ギガ 10ギガ 違い"
+  },
+  {
+    "filename": "hikari-osusume-kodate.json",
+    "title": "戸建て向け光回線おすすめ比較｜料金・速度・工事費で選ぶ最適な回線",
+    "category": "hikari",
+    "keyword": "光回線 おすすめ 戸建て"
+  },
+  {
+    "filename": "pocket-wifi-getsugaku-nashi.json",
+    "title": "月額費用なしのポケットWi-Fiは使える？買い切り・チャージ型を比較",
+    "category": "wifi",
+    "keyword": "ポケット wi fi 月額費用無し"
+  },
+  {
+    "filename": "data-sim-osusume.json",
+    "title": "データ通信のみの格安SIMおすすめ比較｜データSIMの選び方と活用法",
+    "category": "sim",
+    "keyword": "格安sim データ通信のみ"
+  },
+  {
+    "filename": "hikari-jigyosha-henko.json",
+    "title": "光回線の事業者変更のやり方｜工事不要で乗り換える手順と注意点",
+    "category": "hikari",
+    "keyword": "光回線 事業者変更 やり方"
+  },
+  {
+    "filename": "tethering-pocket-wifi-hikaku.json",
+    "title": "テザリングとポケットWi-Fiを比較｜料金・速度・バッテリーでどっちが得？",
+    "category": "wifi",
+    "keyword": "テザリング ポケットwi-fi 比較"
+  },
+  {
+    "filename": "homerouter-sim-free.json",
+    "title": "SIMフリーホームルーターおすすめ｜格安SIMと組み合わせる選び方と注意点",
+    "category": "homerouter",
+    "keyword": "ホームルーター simフリー"
+  },
+  {
+    "filename": "hikari-onu-towa.json",
+    "title": "光回線終端装置（ONU）とは？ルーターとの違い・接続方法をわかりやすく解説",
+    "category": "hikari",
+    "keyword": "光回線終端装置"
   }
 ]
