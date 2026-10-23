@@ -97,6 +97,18 @@ function affiliateTop(topic) {
   }
 }
 
+// 記事担当の執筆ルール（media-ops で全サイト共通）。古い年やうろ覚えの数字による誤情報を防ぐ
+function writingRules() {
+  const today = new Date().toISOString().split('T')[0];
+  const year = today.slice(0, 4);
+  return `今日は${today}（${year}年）です。以下の執筆ルールは、他の指示より優先してください。
+- タイトルや本文に年を書くときは${year}年とする。過去の年を「最新」と書かない
+- 金利・手数料・年会費・料金・還元率・保険料・利回り・年収・キャンペーン額など変わりやすい数値は、確実に知っているものだけを「目安」「執筆時点」と添えて書く。自信のない数値・特典・キャンペーンは書かず、公式サイトで最新情報を確認するよう案内する
+- 実在しない商品・サービス・統計・調査結果を作らない。「〇〇調べ」などの出典を作らない
+- 「絶対」「必ず」「誰でも」「100%」などの断定・誇大表現を使わない
+- 比較表は、数値の代わりに特徴・向いている人・注意点で比べてもよい`;
+}
+
 async function generateArticle() {
   const topicsPath = path.join(__dirname, '..', 'unused-topics.json');
   const contentDir = path.join(__dirname, '..', 'content');
@@ -122,7 +134,7 @@ SEOに最適化されたインターネット回線・WiFi情報記事を生成�
 
 以下のJSON形式のみで出力してください（前後に余分なテキスト不要）:
 {
-  "title": "タイトル（SEO最適化、40〜60文字、年や具体的な数字を含める）",
+  "title": "タイトル（SEO最適化、40〜60文字、年を入れるなら今年、数字は確かなものだけ）",
   "description": "メタディスクリプション（120文字以内）",
   "category": "${topic.category}",
   "date": "${today}",
@@ -133,7 +145,7 @@ contentの要件:
 - 1500文字程度のHTML本文（簡潔にまとめること）
 - h2見出しを3〜5個
 - ul/liリスト、tableを活用
-- 料金・速度・キャッシュバックなど具体的な数字を含める
+- 料金・速度・キャッシュバックなど具体的な数字は、確かなものだけ目安として含める
 - JSON文字列として正しくエスケープ（"は\\"、改行は\\n）
 - 必ずJSON全体を完結させること（途中で切れないこと）
 - JSON文字列として正しくエスケープ（"は\\"、改行は\\n）`;
@@ -143,7 +155,7 @@ contentの要件:
     try {
       const message = await client.messages.create({
         model: 'claude-haiku-4-5-20251001',
-        max_tokens: 6000,
+        max_tokens: 6000, system: writingRules(),
         messages: [{ role: 'user', content: prompt }],
       });
       const text = message.content[0].text.trim();
